@@ -1,0 +1,46 @@
+#main {
+  width: 100%;
+  height: 100%;
+}
+.main-container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.game-board-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.inventory {
+  height:auto;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+} 
+
+.fa-3x {
+  font-size: 20px;
+}
+
+.options div {
+  width: 40px;
+  height: 40px;
+}
+
+.slot {
+  width: 30px;
+  height: 30px;
+}
+
+
+.landing {
+  background: url("./images/landing-image0.png") no-repeat center center/cover;
+}
+
+.input-group {
+  flex-direction: column;
+}

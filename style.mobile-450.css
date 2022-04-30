@@ -1,0 +1,23 @@
+.inventory {
+  flex-wrap: wrap;
+}
+
+.tool-container {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.tool-container p {
+  display: none;
+}
+
+.inputs {
+  top: 100%;
+  left: -75px;
+}
+
+.landing-container .settings {
+  align-self: center;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/abdcc7f987.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="(max-width: 1000px)" href="./style.mobile.css">
+  <link rel="stylesheet" media="(max-width: 650px)" href="./style.mobile-450.css">
+  <script src="./main.js" defer></script>
+  <script src="./landing-page.js" defer></script>
+  <title>Minecraft</title>
+</head>
+<body>
+  <div class="landing">
+    <div class="landing-container">
+      <p class="start-game mc-btn">Start</p>
+      <p class="game-info mc-btn">About the game</p>
+      <div class="settings">
+        <div class="gear mc-btn">
+          <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="inputs hidden">
+          <div class="input-group">
+            <label for="width">Width: </label>
+            <input type="text" name="width" id="width">
+          </div>
+          <div class="input-group">
+            <label for="height">Height </label>
+            <input type="text" name="height" id="height">
+          </div>
+        </div>
+      </div>
+      <p class="info hidden mc-btn"></p>
+    </div>
+  </div>
+  <main id="main">
+    <div class="main-container">
+      <div class="game-board-wrapper">
+        <div class="game-board"></div>
+      </div>
+      <div class="inventory">
+        <div class="guide">
+          <div class="qm-icon"><i class="fa-solid fa-circle-question fa-3x"></i></div>
+          <ul class="index">
+            <li>Shovel - Grass / Dirt</li>
+            <li>Pickaxe - Stone</li>
+            <li>Axe - Wood / Leaves</li>
+            <li>Hand of God - Clouds</li>
+            <li>Super Spoon - Lava</li>
+          </ul>
+        </div>
+        <div data-clicked="false" class="tool-container ">
+          <div data-name="Shovel" class="tool shovel"></div>
+        </div>
+        <div data-clicked="false" class="tool-container">
+          <div data-name="Pickaxe" class="tool pickaxe"></div>
+        </div>
+        <div data-clicked="false" class="tool-container">
+          <div data-name="Axe" class="tool axe"></div>
+        </div>
+        <div data-clicked="false" class="tool-container">
+          <div data-name="Hand of God" class="tool hog"></div>
+        </div>
+        <div data-clicked="false" class="tool-container">
+          <div data-name="Super Spoon" class="tool spoon"></div>
+        </div>
+        <div class="bank">
+          <div data-clicked="false" class="slot">
+            <p data-count></p>
+          </div>
+          <div data-clicked="false" class="slot">
+            <p data-count></p>
+          </div>
+          <div data-clicked="false" class="slot">
+            <p data-count></p>
+          </div>
+          <div data-clicked="false" class="slot">
+            <p data-count></p>
+          </div>
+          <div data-clicked="false" class="slot">
+            <p data-count></p>
+          </div>
+          <div data-clicked="false" class="slot">
+            <p data-count></p>
+          </div>
+        </div>
+        <div class="options">
+          <div data-name="Save" class="save"><i class="fa-solid fa-floppy-disk fa-3x"></i></div>
+          <div data-name="Load" class="load"><i class="fa-solid fa-download fa-3x"></i></div>
+          <div data-name="Reset" class="reset"><i class="fa-solid fa-arrow-rotate-left fa-3x"></i></div>
+          <!-- <div data-name="Shuffle" class="shuffle"><i class="fa-solid fa-shuffle fa-3x"></i></div> -->
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
