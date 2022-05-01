@@ -1,0 +1,106 @@
+.tool-container {
+  width: 80px;
+  height: 100px;
+  background-color: #444;
+  border-style: groove;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.tool-container:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.tool {
+  height: 100%;
+  width: 100%;
+}
+
+.shovel {
+  background: url("../images/shovel.png") no-repeat center center/cover;
+  position: relative;
+}
+.shovel:hover::after {
+  top: calc(50% - 10px);
+  width: 100%;
+  position: absolute;
+  content: attr(data-name);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pickaxe {
+  background: url("../images/pickaxe.png") no-repeat center center/cover;
+  position: relative;
+}
+.pickaxe:hover::after {
+  top: calc(50% - 10px);
+  position: absolute;
+  width: 100%;
+  content: attr(data-name);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.axe {
+  background: url("../images/axe.png") no-repeat center center/cover;
+  position: relative;
+}
+.axe:hover::after {
+  top: calc(50% - 10px);
+  width: 100%;
+  position: absolute;
+  content: attr(data-name);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hog {
+  background: url("../images/133.png") no-repeat center center/cover;
+  position: relative;
+}
+.hog:hover::after {
+  top: calc(50% - 20px);
+  width: 100%;
+  position: absolute;
+  content: attr(data-name);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.spoon {
+  background: url("../images/super-spoon.png") no-repeat center center/cover;
+  position: relative;
+}
+.spoon:hover::after {
+  top: calc(50% - 20px);
+  width: 100%;
+  position: absolute;
+  content: attr(data-name);
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.tool-container p {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.active {
+  background-color: aqua;
+}

@@ -1,0 +1,30 @@
+.bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slot {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border-style: groove;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  position: relative;
+}
+
+.slot:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+[data-count] {
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 10px;
+  top: calc(100% - 12px);
+}
